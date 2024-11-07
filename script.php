@@ -15,6 +15,12 @@
     
     <h1 class="w-100 p-2 bg-primary text-white text-center">  INDOVINA NUMERI  </h1>
 
+    <?php
+        if(!isset($_SESSION["sent_rev"])) 
+            $_SESSION["sent_rev"] = 0;
+        $_SESSION["sent_rev"]++;
+    ?>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

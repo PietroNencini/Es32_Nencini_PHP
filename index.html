@@ -11,6 +11,15 @@
     
     <h1 class="w-100 p-2 bg-primary text-white text-center">  RECENSIONI  </h1>
 
+    <div id="form_container" class="bg-body-secondary rounded-4 shadow-lg">
+        <form action="./script.php" method="post" >
+            <label for="date" class="form-label"> Data recensione </label>
+            <input type="date" name="rev_date" id="date" class="form-control mb-2">
+            <label for="vote" class="form-label"> Voto da 1 a 5 </label>
+            <input type="number" name="rev_vote" id="vote" class="form-control mb-2" min="1" max="5">
+            <button type="submit" class="btn btn-success" id="sub_btn"> INVIA </button>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
